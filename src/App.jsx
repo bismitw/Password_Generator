@@ -13,8 +13,12 @@ function App() {
     let pass = ""
     let str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
     if (numberAllowed) str += "0123456789"
-    if (charAllowed) str += ""
+    if (charAllowed) str += "!@#$%^&*()_+"
 
+    for (let i = 1; i < length; i++) {
+      const char = Math.floor(Math.random() * str.length + 1)
+      
+    }
   }) 
 
   return (
